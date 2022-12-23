@@ -1,28 +1,7 @@
 ﻿@page "/"
 
-Course => @course.CourseName
-<br />
-Price : @course.Price
-<br />
-<input type="number" @bind-value="@course.Price" @bind-value:event="oninput" />
-<br />
-<input type="checkbox" @bind-value="@course.IsActive" checked="@course.IsActive" /> Is Active
-<br />
-<span>This Course is @(course.IsActive ? "Active" : "In Active")</span>
-
-@code {
-    Models.CourseTraining course = new()
-        {
-            Id = 1,
-            CourseName = "Blazor e-commerce",
-            IsActive = true,
-            Price = 20
-        };
-}
-
-@*<h1>Hello, world!</h1>
+<h1>Hello, world!</h1>
 
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
-*@
